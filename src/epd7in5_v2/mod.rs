@@ -136,7 +136,7 @@ where
         Ok(())
     }
 
-    pub fn update_partial_frame(
+    fn update_partial_frame(
         &mut self,
         spi: &mut SPI,
         delay: &mut DELAY,
