@@ -131,6 +131,13 @@ pub(crate) enum Command {
     // /// This is in all the Waveshare controllers for Epd7in5, but it's not documented
     // /// anywhere in the datasheet `¯\_(ツ)_/¯`
     // FlashMode = 0xE5,
+
+    /// Sets window size for the partial update
+    PartialWindow = 0x90,
+    /// Sets chip into partial update mode
+    PartialIn = 0x91,
+    /// Quits partial update mode
+    PartialOut = 0x92,
 }
 
 impl traits::Command for Command {
